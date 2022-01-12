@@ -24,7 +24,6 @@ if (array_key_exists("HTTP_X_FORWARDED_FOR", $_SERVER)) {
 if ($valid) {
     echo "flag:$FLAG", PHP_EOL;
 } else {
-    http_response_code(403);
     echo "Forbidden", PHP_EOL;
 }
 ?>
